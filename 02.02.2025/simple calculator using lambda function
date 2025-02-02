@@ -1,0 +1,27 @@
+add = lambda x, y: x + y
+subtract = lambda x, y: x - y
+multiply = lambda x, y: x * y
+divide = lambda x, y: x / y if y != 0 else "Cannot divide by zero"
+
+def calculator():
+    print("Choose operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+
+    choice = int(input("Enter choice: "))
+    x, y = float(input("Enter first number: ")), float(input("Enter second number: "))
+
+    if choice == 1:
+        print(f"Result: {add(x, y)}")
+    elif choice == 2:
+        print(f"Result: {subtract(x, y)}")
+    elif choice == 3:
+        print(f"Result: {multiply(x, y)}")
+    elif choice == 4:
+        print(f"Result: {divide(x, y)}")
+    else:
+        print("Invalid choice")
+
+calculator()
