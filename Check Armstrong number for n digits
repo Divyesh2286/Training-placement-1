@@ -1,0 +1,6 @@
+num = input("Enter a number: ")
+n = len(num)
+if sum(int(digit) ** n for digit in num) == int(num):
+    print("Armstrong Number")
+else:
+    print("Not Armstrong")
